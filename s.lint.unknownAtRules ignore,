@@ -1,0 +1,17 @@
+[33mcommit af78cb812e430034de8c76225333976a93e3c309[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: SkylerAuraArena <skylerauraarena@gmail.com>
+Date:   Wed Nov 17 21:23:11 2021 +0100
+
+    Configuration et nettoyage du site vanilla React
+
+[33mcommit f17fdf0bd2da37c7acdbc828f39cab6f6787e625[m
+Author: SkylerAuraArena <skylerauraarena@gmail.com>
+Date:   Wed Nov 17 21:17:36 2021 +0100
+
+    Tailwind installation and setup
+
+[33mcommit 67178715a00e823962b5af2af09f4c4bcbbae20b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: SkylerAuraArena <skylerauraarena@gmail.com>
+Date:   Wed Nov 17 20:52:56 2021 +0100
+
+    Initialize project using Create React App
