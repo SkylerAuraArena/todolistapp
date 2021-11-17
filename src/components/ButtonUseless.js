@@ -12,6 +12,7 @@ const Button = (props) => {
 
     const handleExit = () => {
         setTxtBtn(props.children)
+
         setColorBtn("SecondColor")
         setTransitionColor("bg-yellow-400")
     }
