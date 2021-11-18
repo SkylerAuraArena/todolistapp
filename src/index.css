@@ -4,7 +4,9 @@
 
 :root {
   --mainColor: #282c34;
-  --secondColor: rgba(6, 95, 70, 1);
+  --greenColor: rgba(6, 95, 70, 1);
+  --yellowColor: rgba(251, 191, 36, 1);
+  --redColor: rgba(220, 38, 38, 1);
 }
 
 body {
@@ -20,6 +22,12 @@ body {
 .MainColor {
   background-color: var(--mainColor);
 }
-.SecondColor {
-  background-color: var(--secondColor);
+.greenColor {
+  background-color: var(--greenColor);
+}
+.yellowColor {
+  background-color: var(--yellowColor);
+}
+.redColor {
+  background-color: var(--redColor);
 }
