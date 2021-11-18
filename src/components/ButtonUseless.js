@@ -2,22 +2,26 @@ import React, {useState} from 'react'
 
 const Button = (props) => {
 
-    const [txtBtn, setTxtBtn] = useState(props.children)
-    const [colorBtn, setColorBtn] = useState("SecondColor")
+    const tabEtats = {
+        txt: [props.children,"Attention, ce bouton est inutile !","Je vous l'avais bien dit !"],
+        color: ["SecondColor","bg-yellow-400","bg-red-600"]
+    }
+    const [txtBtn, setTxtBtn] = useState(tabEtats.txt[0])
+    const [colorBtn, setColorBtn] = useState(tabEtats.color[0])
 
     const handleOver = () => {
-        setTxtBtn("Attention, ce bouton est inutile !")
-        setColorBtn("bg-yellow-400")
-    }
-
-    const handleExit = () => {
-        setTxtBtn(props.children)
-        setColorBtn("SecondColor")
+        setTxtBtn(tabEtats.txt[1])
+        setColorBtn(tabEtats.color[1])
     }
 
     const handleClick = () => {
-        setTxtBtn("Je vous l'avais bien dit !")
-        setColorBtn("bg-red-600")
+        setTxtBtn(tabEtats.txt[2])
+        setColorBtn(tabEtats.color[2])
+    }
+
+    const handleExit = () => {
+        setTxtBtn(tabEtats.txt[0])
+        setColorBtn(tabEtats.color[0])
     }
 
     // transition duration-50 ease-in-out
