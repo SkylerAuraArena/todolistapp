@@ -31,3 +31,24 @@ body {
 .redColor {
   background-color: var(--redColor);
 }
+
+.imgOut {
+  max-width: 35%;
+  max-height: 35vh;
+}
+
+.animation1 {
+  animation-name: brokenAnimation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+@keyframes brokenAnimation {
+  25% {
+    transform: rotate(-90deg);
+  }
+  70% {
+    transform: translate(0, 65vh);
+  }
+}

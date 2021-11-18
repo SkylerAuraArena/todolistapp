@@ -1,9 +1,24 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 
-const H1 = ({children}) => {
+const H1 = ({isBtnClicked, children}) => {
+
+    const [animation, setAnimation] = useState("")
+    const [displayElt, setDisplayElt] = useState(true)
+
+    useEffect(() => {
+        if(isBtnClicked){
+            console.log("Fin du monde !")
+            setAnimation("animation1")
+            setTimeout(() => {
+                setDisplayElt(false)
+            }, 1400);
+        }
+    }, [isBtnClicked])
+
+    const css = `my-8 ${animation}`
 
     return(
-        <h1 className="mb-10">{children}</h1>
+        displayElt && <h1 className={css}>{children}</h1>
     )
 }
 
