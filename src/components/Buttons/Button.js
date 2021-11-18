@@ -13,7 +13,7 @@ const Button = (props) => {
     })
 
     const css = `${colorBtn}
-    rounded-3xl border-4 p-2
+    rounded-3xl border-4 p-2 m-5 w-40 lg:w-auto
     transform hover:scale-110`
 
     return(
